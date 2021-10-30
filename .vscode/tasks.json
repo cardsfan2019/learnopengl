@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "bp",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-g",
+				"hello_triangle.cpp",
+				"glad.c",
+				"GLShader.cpp",
+				"stb_image.cpp",
+				"Shader.cpp",
+				"VAO.cpp",
+				"VBO.cpp",
+				"EBO.cpp",
+				"Texture2D.cpp",
+				"-ldl",
+				"-lglfw",
+				"-o",
+				"hello_triangle.exe"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/g++",
+			"options": {
+				"cwd": "/home/tjgreen/glprojects/learnopengl"
+			}
+		}
+	]
+}
